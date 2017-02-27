@@ -50,10 +50,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 		<? if (isset($wordErr)) echo $wordErr ?>
 		<br><br>
 
-		<label for='bonus'>Bonus Points</label><br>
-		<input type='radio' name='bonus' id='bonus'<?php if (isset($bonus) && $bonus=='none') echo "checked"; ?> value = 'none' checked> None<br>
-		<input type='radio' name='bonus' id='bonus' <?php if (isset($bonus) && $bonus=='double') echo "checked"; ?> value = 'double'> Double Word<br>
-		<input type='radio' name='bonus' id='bonus'<?php if (isset($bonus) && $bonus=='triple') echo "checked"; ?> value = 'triple'> Triple Word<br>
+		<label>Bonus Points</label><br>
+		<input type='radio' name='bonus' <?php if (isset($bonus) && $bonus=='none') echo "checked"; ?> value = 'none' checked> None<br>
+		<input type='radio' name='bonus' <?php if (isset($bonus) && $bonus=='double') echo "checked"; ?> value = 'double'> Double Word<br>
+		<input type='radio' name='bonus' <?php if (isset($bonus) && $bonus=='triple') echo "checked"; ?> value = 'triple'> Triple Word<br>
 		<br>
 
 		<label for='bingo'>Bingo</label><br>
