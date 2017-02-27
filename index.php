@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 	<br>
 	<h1>Scrabble Word Score Calculator</h1>
 	<br>
-	<img src="scrabble.jpg">
+	<img src="scrabble.jpg" alt="scrabble">
 	<br><br>
 	<div class='content'>
 	
@@ -51,13 +51,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 		<br><br>
 
 		<label for='bonus'>Bonus Points</label><br>
-		<input type='radio' name='bonus' <?php if (isset($bonus) && $bonus=='none') echo "checked"; ?> value = 'none' checked> None<br>
-		<input type='radio' name='bonus' <?php if (isset($bonus) && $bonus=='double') echo "checked"; ?> value = 'double'> Double Word<br>
-		<input type='radio' name='bonus' <?php if (isset($bonus) && $bonus=='triple') echo "checked"; ?> value = 'triple'> Triple Word<br>
+		<input type='radio' name='bonus' id='bonus'<?php if (isset($bonus) && $bonus=='none') echo "checked"; ?> value = 'none' checked> None<br>
+		<input type='radio' name='bonus' id='bonus' <?php if (isset($bonus) && $bonus=='double') echo "checked"; ?> value = 'double'> Double Word<br>
+		<input type='radio' name='bonus' id='bonus'<?php if (isset($bonus) && $bonus=='triple') echo "checked"; ?> value = 'triple'> Triple Word<br>
 		<br>
 
 		<label for='bingo'>Bingo</label><br>
-		<input type='checkbox' name='bingo' value='true'> Yes 
+		<input type='checkbox' name='bingo' id ='bingo' value='true'> Yes 
 		<br><br>
 
 		<input type='submit' name='submit' value='Submit'>
