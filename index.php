@@ -7,7 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 	if (empty($_GET['word'])) {
 		$wordErr = '*Please enter a word';
 	} else {
-		$word = $_GET['word'];
+		$word = strtolower($_GET['word']);
+		
 		if (!preg_match("/^[a-zA-Z]*$/", $word)) {
 			$wordErr = '*Only alphabetical letters allowed';
 		}
