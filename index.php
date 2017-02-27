@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 	<form method="get"> 
 		<label for='word'>Word    </label>
 		<input type='text' name='word' id='word'> 
-		<? if (isset($wordErr)) echo $wordErr ?>
+		<?php if (isset($wordErr)) echo $wordErr ?>
 		<br><br>
 
 		<label>Bonus Points</label><br>
